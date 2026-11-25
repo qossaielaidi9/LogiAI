@@ -1,0 +1,9 @@
+﻿services:
+  api:
+    build: .
+    image: logiai:tp5
+    ports:
+      - "8003:8000"
+    env_file:
+      - .env
+    restart: unless-stopped
